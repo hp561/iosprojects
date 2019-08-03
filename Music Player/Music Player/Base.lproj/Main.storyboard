@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Music_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoH-5d-Zr2">
+                                <rect key="frame" x="127" y="303" width="121" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="9wX-xT-fMY"/>
+                                    <constraint firstAttribute="height" constant="71" id="o1A-yd-rQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.10178205231987314" green="0.28816332364488523" blue="0.71300194300518127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="songSelector:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwe-b1-WsV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7W-Oc-LgJ" customClass="YoshikoTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="139" y="138" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.87056751943005184" green="0.51858885052554182" blue="0.78156824200556019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="FN6-1x-ZRi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.25438782695740231" green="0.22761979386852102" blue="0.85411918163299561" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                        <color key="value" red="0.11143621419999999" green="0.29848594519999999" blue="0.71300194299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
+                                        <color key="value" red="0.39505117070019624" green="0.6609805648862862" blue="0.98848364639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeBackgroundColor">
+                                        <color key="value" red="0.85411918163299561" green="0.53971850833553758" blue="0.43917929165170938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
+                                        <color key="value" red="0.98022587435233155" green="0.50128015109458635" blue="0.81500687520531689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                        <color key="value" red="0.92816632986068726" green="0.18658801913261414" blue="0.42322933673858643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.98848364639999997" green="0.37763003394882766" blue="0.15944399457441863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.39505117070000001" green="0.66098056490000001" blue="0.98848364639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.71300194299999997" green="0.45917855019999998" blue="0.53475627189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many times do you wanna play it?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvB-hp-iHy">
+                                <rect key="frame" x="16" y="68" width="343" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="YjG-Ea-49C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4g-3Q-Jcu">
+                                <rect key="frame" x="129" y="459" width="117" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="CJO-JS-w3A"/>
+                                    <constraint firstAttribute="height" constant="81" id="q9i-bE-mlY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="0.11531918438502843" green="0.30328323344987429" blue="0.71300194300518127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJe-AX-Tbp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYa-OF-krd">
+                                <rect key="frame" x="144" y="382" width="86" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="5fb-0T-Qh6"/>
+                                    <constraint firstAttribute="width" constant="86" id="QFl-cs-F0A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.11143621424098797" green="0.29848594515350879" blue="0.71300194300518127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1B3-ix-ExM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yt-db-xbu">
+                                <rect key="frame" x="16" y="204" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a song..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phN-Ys-Uiw">
+                                <rect key="frame" x="86" y="204" width="268" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.534671652662153" green="0.87056751943005184" blue="0.83204760091300956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6yt-db-xbu" firstAttribute="leading" secondItem="wvB-hp-iHy" secondAttribute="leading" id="0V3-pH-2In"/>
+                            <constraint firstItem="aoH-5d-Zr2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5aQ-lO-VJe"/>
+                            <constraint firstItem="P7W-Oc-LgJ" firstAttribute="top" secondItem="wvB-hp-iHy" secondAttribute="bottom" constant="18" id="C9r-ZH-ifR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="phN-Ys-Uiw" secondAttribute="trailing" constant="5" id="Ivj-fy-s1n"/>
+                            <constraint firstItem="aoH-5d-Zr2" firstAttribute="centerX" secondItem="aYa-OF-krd" secondAttribute="centerX" id="Nx9-of-ub0"/>
+                            <constraint firstItem="wvB-hp-iHy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="RBl-KS-L7t"/>
+                            <constraint firstItem="wvB-hp-iHy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UEQ-o8-82R"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m4g-3Q-Jcu" secondAttribute="bottom" constant="127" id="c56-BH-vtM"/>
+                            <constraint firstItem="phN-Ys-Uiw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="dXm-2N-QtY"/>
+                            <constraint firstItem="m4g-3Q-Jcu" firstAttribute="top" secondItem="aYa-OF-krd" secondAttribute="bottom" constant="6" id="dmy-ow-sFW"/>
+                            <constraint firstItem="6yt-db-xbu" firstAttribute="top" secondItem="P7W-Oc-LgJ" secondAttribute="bottom" constant="36" id="gUN-ZU-tMn"/>
+                            <constraint firstItem="aoH-5d-Zr2" firstAttribute="centerX" secondItem="P7W-Oc-LgJ" secondAttribute="centerX" id="i68-fy-8lJ"/>
+                            <constraint firstItem="phN-Ys-Uiw" firstAttribute="baseline" secondItem="6yt-db-xbu" secondAttribute="baseline" id="lb3-2A-tvH"/>
+                            <constraint firstItem="aYa-OF-krd" firstAttribute="top" secondItem="aoH-5d-Zr2" secondAttribute="bottom" constant="8" symbolic="YES" id="pGf-rm-Wjh"/>
+                            <constraint firstItem="6yt-db-xbu" firstAttribute="trailing" secondItem="wvB-hp-iHy" secondAttribute="trailing" id="qBM-LA-30e"/>
+                            <constraint firstItem="aYa-OF-krd" firstAttribute="centerX" secondItem="m4g-3Q-Jcu" secondAttribute="centerX" id="rfQ-hV-ptf"/>
+                            <constraint firstAttribute="bottom" secondItem="aYa-OF-krd" secondAttribute="bottom" constant="214" id="vI4-0B-PXv"/>
+                            <constraint firstItem="wvB-hp-iHy" firstAttribute="centerX" secondItem="P7W-Oc-LgJ" secondAttribute="centerX" id="vjG-HR-pLQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loops" destination="P7W-Oc-LgJ" id="7lE-U2-Uvs"/>
+                        <outlet property="songPlaying" destination="phN-Ys-Uiw" id="axa-AS-fKl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818" y="-18"/>
+        </scene>
+    </scenes>
+</document>
